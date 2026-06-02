@@ -100,8 +100,18 @@
 
     "Dashboard": "Instrumentpanel",
 
+    "Total Submissions": "Totala förfrågningar",
+    "All time contact form submissions": "Alla kontaktformulärsförfrågningar",
+    "Unhandled": "Ohanterade",
+    "Submissions not yet read": "Förfrågningar som inte lästs",
+    "Handled": "Hanterade",
+    "Submissions already read": "Förfrågningar som lästs",
     "Contact Submissions": "Kontaktförfrågningar",
     "No submissions yet.": "Inga förfrågningar ännu.",
+    "Search name or email…": "Sök namn eller e-post…",
+    "All statuses": "Alla statusar",
+    "All budgets": "Alla budgetar",
+    "Date range": "Datumintervall",
     "Company": "Företag",
     "Budget": "Budget",
     "Received": "Mottagen",

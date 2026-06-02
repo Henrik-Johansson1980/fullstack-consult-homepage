@@ -19,6 +19,41 @@ class Dashboard extends Component
 
     public bool $showSubmissionModal = false;
 
+    public string $search = '';
+
+    public string $statusFilter = '';
+
+    public string $budgetFilter = '';
+
+    public string $dateFrom = '';
+
+    public string $dateTo = '';
+
+    public function updatedSearch(): void
+    {
+        $this->resetPage();
+    }
+
+    public function updatedStatusFilter(): void
+    {
+        $this->resetPage();
+    }
+
+    public function updatedBudgetFilter(): void
+    {
+        $this->resetPage();
+    }
+
+    public function updatedDateFrom(): void
+    {
+        $this->resetPage();
+    }
+
+    public function updatedDateTo(): void
+    {
+        $this->resetPage();
+    }
+
     public function selectSubmission(int $id): void
     {
         $this->selectedSubmission = ContactSubmission::findOrFail($id);
@@ -48,7 +83,18 @@ class Dashboard extends Component
             'totalSubmissions' => ContactSubmission::count(),
             'unreadSubmissions' => ContactSubmission::whereNull('read_at')->count(),
             'readSubmissions' => ContactSubmission::whereNotNull('read_at')->count(),
-            'submissions' => ContactSubmission::latest()->paginate(10),
+            'submissions' => ContactSubmission::query()
+                ->when($this->search, fn ($q) => $q->where(
+                    fn ($q) => $q->where('name', 'like', "%{$this->search}%")
+                        ->orWhere('email', 'like', "%{$this->search}%")
+                ))
+                ->when($this->statusFilter === 'unread', fn ($q) => $q->whereNull('read_at'))
+                ->when($this->statusFilter === 'read', fn ($q) => $q->whereNotNull('read_at'))
+                ->when($this->budgetFilter, fn ($q) => $q->where('budget', $this->budgetFilter))
+                ->when($this->dateFrom, fn ($q) => $q->whereDate('created_at', '>=', $this->dateFrom))
+                ->when($this->dateTo, fn ($q) => $q->whereDate('created_at', '<=', $this->dateTo))
+                ->latest()
+                ->paginate(10),
         ]);
     }
 }

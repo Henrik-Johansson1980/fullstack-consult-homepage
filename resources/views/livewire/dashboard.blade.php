@@ -33,6 +33,36 @@
         <div class="p-6">
             <flux:heading size="lg" class="mb-4">{{ __('Contact Submissions') }}</flux:heading>
 
+            <div class="mb-4 flex flex-wrap gap-3">
+                <flux:input
+                    wire:model.live.debounce.300ms="search"
+                    placeholder="{{ __('Search name or email…') }}"
+                    icon="magnifying-glass"
+                    clearable
+                    class="w-56"
+                />
+
+                <flux:select wire:model.live="statusFilter" placeholder="{{ __('All statuses') }}" class="w-40">
+                    <flux:select.option value="">{{ __('All statuses') }}</flux:select.option>
+                    <flux:select.option value="unread">{{ __('Unread') }}</flux:select.option>
+                    <flux:select.option value="read">{{ __('Read') }}</flux:select.option>
+                </flux:select>
+
+                <flux:select wire:model.live="budgetFilter" placeholder="{{ __('All budgets') }}" class="w-40">
+                    <flux:select.option value="">{{ __('All budgets') }}</flux:select.option>
+                    @foreach ($budgetLabels as $value => $label)
+                        <flux:select.option :value="$value">{{ $label }}</flux:select.option>
+                    @endforeach
+                </flux:select>
+
+                <div class="flex items-center gap-2">
+                    <flux:text class="text-sm text-zinc-500 whitespace-nowrap">{{ __('Date range') }}</flux:text>
+                    <flux:input wire:model.live="dateFrom" type="date" size="sm" />
+                    <flux:text class="text-zinc-400">–</flux:text>
+                    <flux:input wire:model.live="dateTo" type="date" size="sm" />
+                </div>
+            </div>
+
             @if ($submissions->isEmpty())
                 <flux:text class="text-center py-12">{{ __('No submissions yet.') }}</flux:text>
             @else
