@@ -14,14 +14,14 @@ class ContactFormMail extends Mailable implements ShouldQueue
     use Queueable, SerializesModels;
 
     /**
-     * @param array<string, string> $submission
+     * @param  array<string, string>  $submission
      */
     public function __construct(public readonly array $submission) {}
 
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Ny förfrågan från '.$this->submission['name'],
+            subject: __('marketing.mail_subject', ['name' => $this->submission['name']]),
             replyTo: [$this->submission['email']],
         );
     }
@@ -33,5 +33,4 @@ class ContactFormMail extends Mailable implements ShouldQueue
             with: ['submission' => $this->submission],
         );
     }
-
 }

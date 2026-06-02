@@ -4,12 +4,12 @@
 
             {{-- Left: info --}}
             <div class="lg:sticky lg:top-32">
-                <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">Kontakt</p>
+                <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">{{ __('marketing.contact_label') }}</p>
                 <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                    Redo att ta nästa steg?
+                    {{ __('marketing.contact_heading') }}
                 </h2>
                 <p class="mt-6 text-lg leading-relaxed text-zinc-200">
-                    Berätta om ditt projekt och dina utmaningar. Jag svarar inom 24 timmar och erbjuder ett kostnadsfritt första samtal.
+                    {{ __('marketing.contact_subheading') }}
                 </p>
 
                 <div class="mt-10 space-y-4">
@@ -20,7 +20,7 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-xs font-medium text-zinc-100">E-post</p>
+                            <p class="text-xs font-medium text-zinc-100">{{ __('marketing.contact_email_label') }}</p>
                             <a href="mailto:din@epost.se" class="text-sm text-white transition-colors hover:text-zinc-300">din@epost.se</a>
                         </div>
                     </div>
@@ -32,8 +32,8 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-xs font-medium text-zinc-100">Svarstid</p>
-                            <p class="text-sm text-white">Inom 24 timmar på vardagar</p>
+                            <p class="text-xs font-medium text-zinc-100">{{ __('marketing.contact_time_label') }}</p>
+                            <p class="text-sm text-white">{{ __('marketing.contact_time_value') }}</p>
                         </div>
                     </div>
 
@@ -42,8 +42,8 @@
                             <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
                         </div>
                         <div>
-                            <p class="text-xs font-medium text-zinc-100">Status</p>
-                            <p class="text-sm text-white">Tillgänglig för nya uppdrag</p>
+                            <p class="text-xs font-medium text-zinc-100">{{ __('marketing.contact_status_label') }}</p>
+                            <p class="text-sm text-white">{{ __('marketing.contact_status_value') }}</p>
                         </div>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                         <svg class="mx-auto mb-4 h-12 w-12 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <h3 class="mb-2 text-lg font-semibold text-white">Tack för ditt meddelande!</h3>
-                        <p class="text-sm text-zinc-200">Jag återkommer inom 24 timmar.</p>
+                        <h3 class="mb-2 text-lg font-semibold text-white">{{ __('marketing.contact_success_heading') }}</h3>
+                        <p class="text-sm text-zinc-200">{{ __('marketing.contact_success_body') }}</p>
                     </div>
                 @else
                     <form
@@ -71,7 +71,7 @@
                             {{-- Name --}}
                             <div>
                                 <label for="name" class="mb-1.5 block text-sm font-medium text-zinc-100">
-                                    Namn <span class="text-zinc-100">*</span>
+                                    {{ __('marketing.contact_field_name') }} <span class="text-zinc-100">*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -90,7 +90,7 @@
                             {{-- Email --}}
                             <div>
                                 <label for="email" class="mb-1.5 block text-sm font-medium text-zinc-100">
-                                    E-post <span class="text-zinc-100">*</span>
+                                    {{ __('marketing.contact_field_email') }} <span class="text-zinc-100">*</span>
                                 </label>
                                 <input
                                     type="email"
@@ -109,7 +109,7 @@
                             {{-- Company --}}
                             <div class="sm:col-span-2">
                                 <label for="company" class="mb-1.5 block text-sm font-medium text-zinc-100">
-                                    Företag <span class="text-zinc-100">(valfritt)</span>
+                                    {{ __('marketing.contact_field_company') }} <span class="text-zinc-100">{{ __('marketing.contact_field_company_opt') }}</span>
                                 </label>
                                 <input
                                     type="text"
@@ -124,33 +124,33 @@
                             {{-- Budget --}}
                             <div class="sm:col-span-2">
                                 <label for="budget" class="mb-1.5 block text-sm font-medium text-zinc-100">
-                                    Ungefärlig budget <span class="text-zinc-100">(valfritt)</span>
+                                    {{ __('marketing.contact_field_budget') }} <span class="text-zinc-100">{{ __('marketing.contact_field_budget_opt') }}</span>
                                 </label>
                                 <select
                                     id="budget"
                                     name="budget"
                                     class="w-full rounded-lg border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-white transition-colors focus:border-zinc-500 focus:outline-none focus:ring-1 focus:ring-zinc-500"
                                 >
-                                    <option value="">Välj budgetintervall</option>
-                                    <option value="under_10k" @selected(old('budget') === 'under_10k')>Under 10 000 kr</option>
-                                    <option value="10k_50k" @selected(old('budget') === '10k_50k')>10 000 – 50 000 kr</option>
-                                    <option value="50k_100k" @selected(old('budget') === '50k_100k')>50 000 – 100 000 kr</option>
-                                    <option value="over_100k" @selected(old('budget') === 'over_100k')>Över 100 000 kr</option>
-                                    <option value="not_sure" @selected(old('budget') === 'not_sure')>Vet inte än</option>
+                                    <option value="">{{ __('marketing.contact_budget_placeholder') }}</option>
+                                    <option value="under_10k" @selected(old('budget') === 'under_10k')>{{ __('marketing.contact_budget_under_10k') }}</option>
+                                    <option value="10k_50k" @selected(old('budget') === '10k_50k')>{{ __('marketing.contact_budget_10k_50k') }}</option>
+                                    <option value="50k_100k" @selected(old('budget') === '50k_100k')>{{ __('marketing.contact_budget_50k_100k') }}</option>
+                                    <option value="over_100k" @selected(old('budget') === 'over_100k')>{{ __('marketing.contact_budget_over_100k') }}</option>
+                                    <option value="not_sure" @selected(old('budget') === 'not_sure')>{{ __('marketing.contact_budget_not_sure') }}</option>
                                 </select>
                             </div>
 
                             {{-- Message --}}
                             <div class="sm:col-span-2">
                                 <label for="message" class="mb-1.5 block text-sm font-medium text-zinc-100">
-                                    Berätta om ditt projekt <span class="text-zinc-100">*</span>
+                                    {{ __('marketing.contact_field_message') }} <span class="text-zinc-100">*</span>
                                 </label>
                                 <textarea
                                     id="message"
                                     name="message"
                                     rows="5"
                                     required
-                                    placeholder="Beskriv dina nuvarande utmaningar och vad du vill uppnå..."
+                                    placeholder="{{ __('marketing.contact_message_placeholder') }}"
                                     class="w-full resize-none rounded-lg border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-white placeholder-zinc-600 transition-colors focus:border-zinc-500 focus:outline-none focus:ring-1 focus:ring-zinc-500 @error('message') border-red-700 @enderror"
                                 >{{ old('message') }}</textarea>
                                 @error('message')
@@ -163,11 +163,11 @@
                             type="submit"
                             class="mt-6 w-full rounded-lg bg-white px-6 py-3.5 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-100"
                         >
-                            Skicka meddelande
+                            {{ __('marketing.contact_submit') }}
                         </button>
 
                         <p class="mt-4 text-center text-xs text-zinc-200">
-                            Dina uppgifter hanteras konfidentiellt och delas aldrig med tredje part.
+                            {{ __('marketing.contact_privacy') }}
                         </p>
                     </form>
                 @endif

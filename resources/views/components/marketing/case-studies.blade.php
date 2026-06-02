@@ -1,38 +1,16 @@
 @php
-$cases = [
-    [
-        'industry' => 'E-handel',
-        'title' => 'Migrering från WooCommerce till skräddarsytt system',
-        'description' => 'Företaget hade vuxit ur sin WordPress-lösning och behövde hantera komplexa B2B-prissättningar, automatisk lagerstyrning och integration mot sitt affärssystem.',
-        'results' => ['60% snabbare sidladdning', 'Automatiserad orderhantering', 'Integration mot Fortnox'],
-        'placeholder' => true,
-    ],
-    [
-        'industry' => 'Tjänsteföretag',
-        'title' => 'Kundportal med boknings- och fakturasystem',
-        'description' => 'Konsultbolaget behövde en portal där kunder kunde boka möten, se sina projekt, godkänna offerter och ladda ner fakturor – allt på ett ställe.',
-        'results' => ['80% färre supportärenden', 'Helautomatisk fakturering', 'Nöjdare kunder'],
-        'placeholder' => true,
-    ],
-    [
-        'industry' => 'Fastigheter',
-        'title' => 'Hyresgästportal med autmatiserade processer',
-        'description' => 'Fastighetsbolaget hanterade allt manuellt i e-post och kalkylblad. Vi byggde en portal för hyresgäster, felanmälningar, kontrakt och automatiserade påminnelser.',
-        'results' => ['12 timmars/vecka sparad administration', 'Digital kontraktshantering', 'Realtidsövervakning'],
-        'placeholder' => true,
-    ],
-];
+$cases = __('marketing.cases');
 @endphp
 
 <section class="bg-zinc-900/20 py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">Case studies</p>
+            <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">{{ __('marketing.cases_label') }}</p>
             <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Projekt jag är stolt över
+                {{ __('marketing.cases_heading') }}
             </h2>
             <p class="mt-4 text-lg text-zinc-200">
-                Verkliga problem, verkliga lösningar och mätbara resultat.
+                {{ __('marketing.cases_subheading') }}
             </p>
         </div>
 
@@ -56,9 +34,7 @@ $cases = [
                         @endforeach
                     </div>
 
-                    @if($case['placeholder'])
-                        <p class="mt-4 text-xs text-zinc-100">Anonymiserat case</p>
-                    @endif
+                    <p class="mt-4 text-xs text-zinc-100">{{ __('marketing.cases_anonymous') }}</p>
                 </div>
             @endforeach
         </div>

@@ -1,34 +1,25 @@
 @php
-$rows = [
-    ['aspect' => 'Anpassningsbarhet', 'custom' => 'Obegränsad – byggs exakt för dina behov', 'wordpress' => 'Begränsad av teman och plugins'],
-    ['aspect' => 'Prestanda', 'custom' => 'Optimerad kod utan onödig overhead', 'wordpress' => 'Tyngs av plugins och generisk kod'],
-    ['aspect' => 'Säkerhet', 'custom' => 'Minimal attackyta, kontrollerad kodbas', 'wordpress' => 'Kräver konstant patchning av plugins'],
-    ['aspect' => 'Skalbarhet', 'custom' => 'Arkitekterad för tillväxt från start', 'wordpress' => 'Kan bli komplicerat att skala'],
-    ['aspect' => 'Äganderätt', 'custom' => 'Du äger koden fullt ut', 'wordpress' => 'Beroende av tredjeparts-plugins'],
-    ['aspect' => 'Underhåll', 'custom' => 'Förutsägbara kostnader, stabil drift', 'wordpress' => 'Plugin-uppdateringar kan bryta sajten'],
-    ['aspect' => 'Integrationer', 'custom' => 'Sömlöst mot valfria system', 'wordpress' => 'Begränsas av tillgängliga plugins'],
-    ['aspect' => 'Långsiktig kostnad', 'custom' => 'Lägre total ägandekostnad', 'wordpress' => 'Plugin-licenser, säkerhetspatchar, ombyggnader'],
-];
+$rows = __('marketing.comparison_rows');
 @endphp
 
 <section class="bg-zinc-900/20 py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">Jämförelse</p>
+            <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">{{ __('marketing.comparison_label') }}</p>
             <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Skräddarsydd lösning vs. WordPress
+                {{ __('marketing.comparison_heading') }}
             </h2>
             <p class="mt-4 text-lg text-zinc-200">
-                Ingen lösning passar alla. Här är en ärlig jämförelse för att hjälpa dig fatta rätt beslut.
+                {{ __('marketing.comparison_subheading') }}
             </p>
         </div>
 
         <div class="mt-16 overflow-hidden rounded-2xl border border-zinc-800">
             {{-- Table header --}}
             <div class="grid grid-cols-3 border-b border-zinc-800 bg-zinc-900 px-6 py-4">
-                <div class="text-sm font-semibold text-zinc-200">Aspekt</div>
-                <div class="text-sm font-semibold text-white">Skräddarsydd lösning</div>
-                <div class="text-sm font-semibold text-zinc-200">WordPress</div>
+                <div class="text-sm font-semibold text-zinc-200">{{ __('marketing.comparison_col_aspect') }}</div>
+                <div class="text-sm font-semibold text-white">{{ __('marketing.comparison_col_custom') }}</div>
+                <div class="text-sm font-semibold text-zinc-200">{{ __('marketing.comparison_col_wp') }}</div>
             </div>
 
             {{-- Rows --}}
@@ -52,7 +43,7 @@ $rows = [
         </div>
 
         <p class="mt-6 text-center text-sm text-zinc-200">
-            WordPress är ett bra verktyg för enkla sajter och bloggar. För komplexa system och tillväxtbolag finns bättre alternativ.
+            {{ __('marketing.comparison_footer') }}
         </p>
     </div>
 </section>

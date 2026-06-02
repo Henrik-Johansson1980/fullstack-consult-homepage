@@ -11,25 +11,38 @@
 
         {{-- Desktop nav --}}
         <div class="hidden items-center gap-8 lg:flex">
-            <a href="#tjanster" class="text-sm text-zinc-200 transition-colors hover:text-white">Tjänster</a>
-            <a href="#process" class="text-sm text-zinc-200 transition-colors hover:text-white">Process</a>
-            <a href="#om-mig" class="text-sm text-zinc-200 transition-colors hover:text-white">Om mig</a>
-            <a href="#faq" class="text-sm text-zinc-200 transition-colors hover:text-white">FAQ</a>
+            <a href="#tjanster" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_services') }}</a>
+            <a href="#process" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_process') }}</a>
+            <a href="#om-mig" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_about') }}</a>
+            <a href="#faq" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_faq') }}</a>
         </div>
 
-        {{-- CTA + mobile toggle --}}
-        <div class="flex items-center gap-4">
+        {{-- CTA + language switcher + mobile toggle --}}
+        <div class="flex items-center gap-3">
+            {{-- Language switcher --}}
+            @php
+                use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+                $otherLocale = app()->getLocale() === 'sv' ? 'en' : 'sv';
+                $switchUrl = LaravelLocalization::getLocalizedURL($otherLocale, null, [], true);
+            @endphp
+            <a
+                href="{{ $switchUrl }}"
+                class="hidden text-xs font-medium text-zinc-200 transition-colors hover:text-white lg:inline-flex items-center gap-1.5 rounded-md border border-zinc-800 px-2.5 py-1.5"
+            >
+                {{ __('marketing.lang_switch') }}
+            </a>
+
             <a
                 href="#kontakt"
                 class="hidden rounded-lg bg-white px-4 py-2 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-100 lg:inline-flex"
             >
-                Boka samtal
+                {{ __('marketing.nav_cta') }}
             </a>
 
             <button
                 @click="open = !open"
                 class="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 text-zinc-200 transition-colors hover:text-white lg:hidden"
-                aria-label="Öppna meny"
+                aria-label="{{ __('marketing.nav_open_menu') }}"
             >
                 <svg x-show="!open" class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -53,15 +66,21 @@
         class="border-t border-zinc-800 bg-zinc-950 px-6 pb-6 pt-4 lg:hidden"
     >
         <div class="flex flex-col gap-4">
-            <a @click="open = false" href="#tjanster" class="text-sm text-zinc-200 transition-colors hover:text-white">Tjänster</a>
-            <a @click="open = false" href="#process" class="text-sm text-zinc-200 transition-colors hover:text-white">Process</a>
-            <a @click="open = false" href="#om-mig" class="text-sm text-zinc-200 transition-colors hover:text-white">Om mig</a>
-            <a @click="open = false" href="#faq" class="text-sm text-zinc-200 transition-colors hover:text-white">FAQ</a>
+            <a @click="open = false" href="#tjanster" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_services') }}</a>
+            <a @click="open = false" href="#process" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_process') }}</a>
+            <a @click="open = false" href="#om-mig" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_about') }}</a>
+            <a @click="open = false" href="#faq" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_faq') }}</a>
+            <a
+                href="{{ $switchUrl }}"
+                class="text-sm text-zinc-200 transition-colors hover:text-white"
+            >
+                {{ __('marketing.lang_switch') }}
+            </a>
             <a
                 href="#kontakt"
                 class="mt-2 inline-flex justify-center rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-zinc-900"
             >
-                Boka samtal
+                {{ __('marketing.nav_cta') }}
             </a>
         </div>
     </div>

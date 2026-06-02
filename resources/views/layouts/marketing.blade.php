@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="sv" class="dark scroll-smooth">
+<html lang="{{ app()->getLocale() }}" class="dark scroll-smooth">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title ?? 'Henrik – Skräddarsydda webblösningar för växande företag' }}</title>
-    <meta name="description" content="{{ $description ?? 'Jag hjälper företag att gå från begränsande standardlösningar till skräddarsydda webbsystem som sparar tid, minskar administration och skapar utrymme för tillväxt.' }}">
+    <title>{{ $title ?? __('marketing.title') }}</title>
+    <meta name="description" content="{{ $description ?? __('marketing.description') }}">
 
     {{-- Open Graph --}}
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="{{ $title ?? 'Henrik – Skräddarsydda webblösningar för växande företag' }}">
-    <meta property="og:description" content="{{ $description ?? 'Jag hjälper företag att gå från begränsande standardlösningar till skräddarsydda webbsystem som sparar tid, minskar administration och skapar utrymme för tillväxt.' }}">
-    <meta property="og:locale" content="sv_SE">
+    <meta property="og:title" content="{{ $title ?? __('marketing.title') }}">
+    <meta property="og:description" content="{{ $description ?? __('marketing.description') }}">
+    <meta property="og:locale" content="{{ str_replace('-', '_', app()->getLocale()) }}">
 
     {{-- Twitter --}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ $title ?? 'Henrik – Skräddarsydda webblösningar för växande företag' }}">
-    <meta name="twitter:description" content="{{ $description ?? 'Jag hjälper företag att gå från begränsande standardlösningar till skräddarsydda webbsystem.' }}">
+    <meta name="twitter:title" content="{{ $title ?? __('marketing.title') }}">
+    <meta name="twitter:description" content="{{ $description ?? __('marketing.description') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -32,10 +32,10 @@
         $structuredData = json_encode([
             '@context'    => 'https://schema.org',
             '@type'       => 'ProfessionalService',
-            'name'        => 'Henrik – Webbutvecklare',
-            'description' => 'Skräddarsydda webblösningar för växande företag',
+            'name'        => __('marketing.structured_data_name'),
+            'description' => __('marketing.structured_data_desc'),
             'url'         => url('/'),
-            'serviceType' => 'Webbutveckling',
+            'serviceType' => __('marketing.structured_data_service'),
             'areaServed'  => 'SE',
         ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     @endphp

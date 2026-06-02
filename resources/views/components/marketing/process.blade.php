@@ -1,41 +1,16 @@
 @php
-$steps = [
-    [
-        'number' => '01',
-        'title' => 'Behovsanalys',
-        'description' => 'Vi börjar med ett kostnadsfritt samtal där vi går igenom din verksamhet, dina mål och dina nuvarande utmaningar. Jag ställer rätt frågor för att förstå vad som faktiskt behöver lösas – inte bara symtomen.',
-        'deliverable' => 'Sammanfattning & förslag',
-    ],
-    [
-        'number' => '02',
-        'title' => 'Design & planering',
-        'description' => 'Baserat på analysen tar jag fram en teknisk plan, en sitemap och enkla wireframes. Vi stämmer av och justerar innan en enda rad kod skrivs. Inga överraskningar längs vägen.',
-        'deliverable' => 'Teknisk spec & wireframes',
-    ],
-    [
-        'number' => '03',
-        'title' => 'Utveckling',
-        'description' => 'Jag bygger i sprintar med regelbundna demos, så du kan följa med och ge feedback löpande. Koden är testad, dokumenterad och redo för produktion.',
-        'deliverable' => 'Fungerande applikation',
-    ],
-    [
-        'number' => '04',
-        'title' => 'Lansering & support',
-        'description' => 'Driftsättning på din infrastruktur, genomgång och utbildning av systemet. Jag är tillgänglig efter lansering för frågor, buggar och vidareutveckling.',
-        'deliverable' => 'Produktionsklar lösning',
-    ],
-];
+$steps = __('marketing.process_steps');
 @endphp
 
 <section id="process" class="py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">Process</p>
+            <p class="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-100">{{ __('marketing.process_label') }}</p>
             <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Hur vi arbetar tillsammans
+                {{ __('marketing.process_heading') }}
             </h2>
             <p class="mt-4 text-lg text-zinc-200">
-                En transparent process där du alltid vet var vi är och vad som händer härnäst.
+                {{ __('marketing.process_subheading') }}
             </p>
         </div>
 

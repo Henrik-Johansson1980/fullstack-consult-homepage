@@ -1,23 +1,23 @@
 <x-mail::message>
-# Ny förfrågan från {{ $submission['name'] }}
+# {{ __('marketing.mail_subject', ['name' => $submission['name']]) }}
 
-Du har fått ett nytt meddelande via kontaktformuläret.
+{{ __('marketing.mail_intro') }}
 
 <x-mail::table>
-| Fält | Värde |
+| {{ __('marketing.mail_field') }} | {{ __('marketing.mail_value') }} |
 |:-----|:------|
-| Namn | {{ $submission['name'] }} |
-| E-post | {{ $submission['email'] }} |
-| Företag | {{ $submission['company'] ?? '–' }} |
-| Budget | {{ $submission['budget'] ?? '–' }} |
+| {{ __('marketing.mail_field_name') }} | {{ $submission['name'] }} |
+| {{ __('marketing.mail_field_email') }} | {{ $submission['email'] }} |
+| {{ __('marketing.mail_company') }} | {{ $submission['company'] ?? '–' }} |
+| {{ __('marketing.mail_budget') }} | {{ $submission['budget'] ?? '–' }} |
 </x-mail::table>
 
-**Meddelande:**
+**{{ __('marketing.mail_message') }}**
 
 {{ $submission['message'] }}
 
 <x-mail::button :url="'mailto:'.$submission['email']">
-Svara {{ $submission['name'] }}
+{{ __('marketing.mail_reply_btn', ['name' => $submission['name']]) }}
 </x-mail::button>
 
 {{ config('app.name') }}
