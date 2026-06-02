@@ -1,17 +1,28 @@
 @props([
     'sidebar' => false,
+    'href' => route('dashboard'),
 ])
 
 @if($sidebar)
-    <flux:sidebar.brand name="Laravel Starter Kit" {{ $attributes }}>
-        <x-slot name="logo" class="flex aspect-square size-8 items-center justify-center rounded-md bg-accent-content text-accent-foreground">
-            <x-app-logo-icon class="size-5 fill-current text-white dark:text-black" />
-        </x-slot>
-    </flux:sidebar.brand>
+    <a
+        href="{{ $href }}"
+        {{ $attributes->except(['wire:navigate'])->class(['h-10 flex items-center px-2']) }}
+        @if($attributes->has('wire:navigate')) wire:navigate @endif
+        data-flux-sidebar-brand
+    >
+        <span class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+            Henrik<span class="text-zinc-400 dark:text-zinc-500">.</span>
+        </span>
+    </a>
 @else
-    <flux:brand name="Laravel Starter Kit" {{ $attributes }}>
-        <x-slot name="logo" class="flex aspect-square size-8 items-center justify-center rounded-md bg-accent-content text-accent-foreground">
-            <x-app-logo-icon class="size-5 fill-current text-white dark:text-black" />
-        </x-slot>
-    </flux:brand>
+    <a
+        href="{{ $href }}"
+        {{ $attributes->except(['wire:navigate'])->class(['h-10 flex items-center me-4']) }}
+        @if($attributes->has('wire:navigate')) wire:navigate @endif
+        data-flux-brand
+    >
+        <span class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+            Henrik<span class="text-zinc-400 dark:text-zinc-500">.</span>
+        </span>
+    </a>
 @endif
