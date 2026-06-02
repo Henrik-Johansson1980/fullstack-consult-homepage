@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\ContactSubmissions;
+namespace App\Livewire;
 
 use App\Models\ContactSubmission;
 use Illuminate\View\View;
@@ -10,8 +10,8 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 #[Layout('layouts.app')]
-#[Title('Contact Submissions')]
-class Index extends Component
+#[Title('Dashboard')]
+class Dashboard extends Component
 {
     use WithPagination;
 
@@ -38,12 +38,16 @@ class Index extends Component
 
         if ($this->selectedSubmission?->id === $id) {
             $this->selectedSubmission = null;
+            $this->showSubmissionModal = false;
         }
     }
 
     public function render(): View
     {
-        return view('livewire.contact-submissions.index', [
+        return view('livewire.dashboard', [
+            'totalSubmissions' => ContactSubmission::count(),
+            'unreadSubmissions' => ContactSubmission::whereNull('read_at')->count(),
+            'readSubmissions' => ContactSubmission::whereNotNull('read_at')->count(),
             'submissions' => ContactSubmission::latest()->paginate(10),
         ]);
     }

@@ -57,6 +57,8 @@
                 @endforeach
             </flux:table.rows>
         </flux:table>
+
+        <flux:pagination :paginator="$submissions" />
     @endif
 
     <flux:modal wire:model.self="showSubmissionModal" class="md:w-[560px]" @close="$wire.closeSubmission()">
