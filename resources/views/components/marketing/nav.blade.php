@@ -27,8 +27,9 @@
             @endphp
             <a
                 href="{{ $switchUrl }}"
-                class="hidden text-xs font-medium text-zinc-200 transition-colors hover:text-white lg:inline-flex items-center gap-1.5 rounded-md border border-zinc-800 px-2.5 py-1.5"
+                class="hidden items-center gap-1.5 rounded-lg border border-zinc-800 px-4 py-2 text-sm font-semibold text-zinc-200 transition-colors hover:text-white lg:inline-flex"
             >
+                <flux:icon.globe-alt variant="micro" />
                 {{ __('marketing.lang_switch') }}
             </a>
 
@@ -68,8 +69,9 @@
             <a @click="open = false" href="#faq" class="text-sm text-zinc-200 transition-colors hover:text-white">{{ __('marketing.nav_faq') }}</a>
             <a
                 href="{{ $switchUrl }}"
-                class="text-sm text-zinc-200 transition-colors hover:text-white"
+                class="inline-flex items-center gap-1.5 text-sm text-zinc-200 transition-colors hover:text-white"
             >
+                <flux:icon.globe-alt variant="micro" />
                 {{ __('marketing.lang_switch') }}
             </a>
             <a
