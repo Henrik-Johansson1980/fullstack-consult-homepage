@@ -44,8 +44,8 @@
                 class="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 text-zinc-200 transition-colors hover:text-white lg:hidden"
                 aria-label="{{ __('marketing.nav_open_menu') }}"
             >
-                <flux:icon.bars-3 x-show="!open" class="h-4 w-4" />
-                <flux:icon.x-mark x-show="open" class="h-4 w-4" />
+                <flux:icon.bars-3 x-show="!open" variant="micro" class="text-zinc-200" />
+                <flux:icon.x-mark x-show="open" variant="micro" class="text-zinc-200" />
             </button>
         </div>
     </nav>

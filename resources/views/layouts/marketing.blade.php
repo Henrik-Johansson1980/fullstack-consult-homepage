@@ -57,6 +57,8 @@
 
     </div>{{-- end relative wrapper --}}
 
+    @livewireScripts
+
     <script>
     (function () {
         const canvas = document.getElementById('particle-canvas');
