@@ -4,7 +4,7 @@ return [
 
     // Layout / meta
     'title' => 'Henrik – Skräddarsydda webblösningar för växande företag',
-    'description' => 'Jag hjälper företag att gå från begränsande standardlösningar till skräddarsydda webbsystem som sparar tid, minskar administration och skapar utrymme för tillväxt.',
+    'description' => 'Vi hjälper företag att gå från begränsande standardlösningar till skräddarsydda webbsystem som sparar tid, minskar administration och skapar utrymme för tillväxt.',
     'structured_data_name' => 'Henrik – Webbutvecklare',
     'structured_data_desc' => 'Skräddarsydda webblösningar för växande företag',
     'structured_data_service' => 'Webbutveckling',
@@ -12,7 +12,7 @@ return [
     // Nav
     'nav_services' => 'Tjänster',
     'nav_process' => 'Process',
-    'nav_about' => 'Om mig',
+    'nav_about' => 'Om oss',
     'nav_faq' => 'FAQ',
     'nav_cta' => 'Boka samtal',
     'nav_open_menu' => 'Öppna meny',
@@ -22,9 +22,9 @@ return [
     'hero_badge' => 'Tillgänglig för nya uppdrag',
     'hero_headline_1' => 'Skräddarsydda webblösningar',
     'hero_headline_2' => 'som hjälper ditt företag att växa',
-    'hero_subheadline' => 'Jag hjälper växande företag att gå från begränsande standardlösningar till skräddarsydda system som sparar tid, minskar administration och skapar utrymme för tillväxt.',
+    'hero_subheadline' => 'Vi hjälper växande företag att gå från begränsande standardlösningar till skräddarsydda system som sparar tid, minskar administration och skapar utrymme för tillväxt.',
     'hero_cta_primary' => 'Boka ett kostnadsfritt samtal',
-    'hero_cta_secondary' => 'Se hur jag arbetar',
+    'hero_cta_secondary' => 'Se hur vi arbetar',
     'hero_trust_gdpr' => 'GDPR-medveten utveckling',
     'hero_trust_fast' => 'Snabb leverans',
     'hero_trust_support' => 'Support efter lansering',
@@ -35,7 +35,7 @@ return [
 
     // Pain points
     'pain_heading' => 'Känner du igen dig?',
-    'pain_subheading' => 'De flesta av mina kunder kom till mig med minst ett av dessa problem.',
+    'pain_subheading' => 'De flesta av våra kunder kom till oss med minst ett av dessa problem.',
     'pain_points' => [
         [
             'title' => 'Din webbplats har vuxit ur WordPress',
@@ -59,8 +59,8 @@ return [
     'solution_label' => 'Lösningen',
     'solution_heading' => 'Det finns ett bättre sätt att arbeta',
     'solution_subheading' => 'En skräddarsydd lösning som passar exakt din verksamhet – inte tvärtom.',
-    'solution_body' => 'Istället för att anpassa din verksamhet efter ett standardsystem bygger jag en lösning som speglar hur du faktiskt arbetar. Det innebär snabbare processer, färre fel och ett system som kan växa i takt med dig.',
-    'solution_cta' => 'Prata med mig om ditt projekt',
+    'solution_body' => 'Istället för att anpassa din verksamhet efter ett standardsystem bygger vi en lösning som speglar hur du faktiskt arbetar. Det innebär snabbare processer, färre fel och ett system som kan växa i takt med dig.',
+    'solution_cta' => 'Prata med oss om ditt projekt',
     'solution_benefits' => [
         'Byggd exakt efter dina behov, inte en mall',
         'Integrationer mot de system du redan använder',
@@ -77,8 +77,8 @@ return [
 
     // Services
     'services_label' => 'Tjänster',
-    'services_heading' => 'Vad kan jag hjälpa dig med?',
-    'services_subheading' => 'Från enkla webbplatser till komplexa affärssystem – jag bygger lösningar som löser verkliga problem.',
+    'services_heading' => 'Vad kan vi hjälpa dig med?',
+    'services_subheading' => 'Från enkla webbplatser till komplexa affärssystem – vi bygger lösningar som löser verkliga problem.',
     'services_cta' => 'Berätta om ditt projekt',
     'services' => [
         ['title' => 'Företagswebbplatser',   'description' => 'Snabba, säkra och konverteringsoptimerade sajter byggda för att generera leads och stärka ditt varumärke.'],
@@ -95,7 +95,7 @@ return [
     'security_label' => 'Säkerhet',
     'security_heading' => 'Säkerhet som är inbyggd från start',
     'security_subheading' => 'När verksamheten växer blir säkerhet en affärsfråga, inte bara en teknisk fråga.',
-    'security_body' => 'Ett dataintrång kostar inte bara pengar – det kostar förtroende. Jag bygger system där säkerhet är en grundsten, inte något som läggs till i efterhand.',
+    'security_body' => 'Ett dataintrång kostar inte bara pengar – det kostar förtroende. Vi bygger system där säkerhet är en grundsten, inte något som läggs till i efterhand.',
     'security_callout' => '<strong class="font-semibold text-white">En vanlig WordPress-site</strong> kör i genomsnitt 20+ plugins, varav många sällan uppdateras. Varje plugin är en potentiell inkörsport. En skräddarsydd lösning har inga onödiga delar.',
     'security_points' => [
         ['title' => 'Minimal attackyta',       'description' => 'Inga onödiga plugins, inga externa beroenden. Varje del av systemet är kontrollerad kod som vi känner till i detalj.'],
@@ -114,25 +114,25 @@ return [
         [
             'number' => '01',
             'title' => 'Behovsanalys',
-            'description' => 'Vi börjar med ett kostnadsfritt samtal där vi går igenom din verksamhet, dina mål och dina nuvarande utmaningar. Jag ställer rätt frågor för att förstå vad som faktiskt behöver lösas – inte bara symtomen.',
+            'description' => 'Vi börjar med ett kostnadsfritt samtal där vi går igenom din verksamhet, dina mål och dina nuvarande utmaningar. Vi ställer rätt frågor för att förstå vad som faktiskt behöver lösas – inte bara symtomen.',
             'deliverable' => 'Sammanfattning & förslag',
         ],
         [
             'number' => '02',
             'title' => 'Design & planering',
-            'description' => 'Baserat på analysen tar jag fram en teknisk plan, en sitemap och enkla wireframes. Vi stämmer av och justerar innan en enda rad kod skrivs. Inga överraskningar längs vägen.',
+            'description' => 'Baserat på analysen tar vi fram en teknisk plan, en sitemap och enkla wireframes. Vi stämmer av och justerar innan en enda rad kod skrivs. Inga överraskningar längs vägen.',
             'deliverable' => 'Teknisk spec & wireframes',
         ],
         [
             'number' => '03',
             'title' => 'Utveckling',
-            'description' => 'Jag bygger i sprintar med regelbundna demos, så du kan följa med och ge feedback löpande. Koden är testad, dokumenterad och redo för produktion.',
+            'description' => 'Vi bygger i sprintar med regelbundna demos, så du kan följa med och ge feedback löpande. Koden är testad, dokumenterad och redo för produktion.',
             'deliverable' => 'Fungerande applikation',
         ],
         [
             'number' => '04',
             'title' => 'Lansering & support',
-            'description' => 'Driftsättning på din infrastruktur, genomgång och utbildning av systemet. Jag är tillgänglig efter lansering för frågor, buggar och vidareutveckling.',
+            'description' => 'Driftsättning på din infrastruktur, genomgång och utbildning av systemet. Vi är tillgängliga efter lansering för frågor, buggar och vidareutveckling.',
             'deliverable' => 'Produktionsklar lösning',
         ],
     ],
@@ -168,7 +168,7 @@ return [
 
     // Case studies
     'cases_label' => 'Case studies',
-    'cases_heading' => 'Projekt jag är stolt över',
+    'cases_heading' => 'Projekt vi är stolta över',
     'cases_subheading' => 'Verkliga problem, verkliga lösningar och mätbara resultat.',
     'cases_anonymous' => 'Anonymiserat case',
     'cases' => [
@@ -195,53 +195,53 @@ return [
     // FAQ
     'faq_label' => 'FAQ',
     'faq_heading' => 'Vanliga frågor',
-    'faq_subheading' => 'Hittar du inte svaret? Hör av dig – jag svarar alltid.',
+    'faq_subheading' => 'Hittar du inte svaret? Hör av dig – vi svarar alltid.',
     'faq_items' => [
         [
             'q' => 'Hur lång tid tar det att bygga en lösning?',
-            'a' => 'Det beror helt på projektets komplexitet. En enklare företagswebbplats tar 2–4 veckor. Ett mer komplext system som en kundportal eller affärssystem tar vanligtvis 6–16 veckor. Jag ger alltid en realistisk tidsuppskattning efter behovsanalysen – inga överraskningar.',
+            'a' => 'Det beror helt på projektets komplexitet. En enklare företagswebbplats tar 2–4 veckor. Ett mer komplext system som en kundportal eller affärssystem tar vanligtvis 6–16 veckor. Vi ger alltid en realistisk tidsuppskattning efter behovsanalysen – inga överraskningar.',
         ],
         [
             'q' => 'Vad kostar det?',
-            'a' => 'Priset varierar baserat på projektets omfång och komplexitet. Enklare sajter börjar runt 30 000–50 000 kr. Mer komplexa system som portaler och affärssystem kostar vanligtvis 80 000–250 000 kr+. Jag arbetar med fast pris baserat på en tydlig spec – inga overheadkostnader.',
+            'a' => 'Priset varierar baserat på projektets omfång och komplexitet. Enklare sajter börjar runt 30 000–50 000 kr. Mer komplexa system som portaler och affärssystem kostar vanligtvis 80 000–250 000 kr+. Vi arbetar med fast pris baserat på en tydlig spec – inga overheadkostnader.',
         ],
         [
             'q' => 'Vad händer när projektet är klart?',
-            'a' => 'Du får tillgång till all källkod, dokumentation och infrastruktur. Jag erbjuder support och underhållsavtal för löpande uppdateringar, säkerhetspatchar och vidareutveckling. Du är aldrig låst – koden är din.',
+            'a' => 'Du får tillgång till all källkod, dokumentation och infrastruktur. Vi erbjuder support och underhållsavtal för löpande uppdateringar, säkerhetspatchar och vidareutveckling. Du är aldrig låst – koden är din.',
         ],
         [
             'q' => 'Kan du integrera mot system vi redan använder?',
-            'a' => 'Absolut. Jag har byggt integrationer mot Fortnox, Visma, HubSpot, Stripe, Klarna, BankID, olika CRM-system och e-handelssystem. Om ditt system har ett API kan vi integrera mot det.',
+            'a' => 'Absolut. Vi har byggt integrationer mot Fortnox, Visma, HubSpot, Stripe, Klarna, BankID, olika CRM-system och e-handelssystem. Om ditt system har ett API kan vi integrera mot det.',
         ],
         [
             'q' => 'Varför inte bara använda WordPress?',
             'a' => 'WordPress är utmärkt för enkla sajter och bloggar. Men för komplexa affärssystem, kundportaler eller applikationer med specifika krav blir det snabbt en begränsning. Skräddarsydda lösningar är snabbare, säkrare och kan växa utan tekniska kompromisser.',
         ],
         [
-            'q' => 'Jobbar du ensam eller med ett team?',
-            'a' => 'Jag är en frilansande utvecklare som arbetar direkt med dig – ingen mellannivå, ingen telefonkedja. För större projekt samarbetar jag med ett nätverk av specialister inom design och DevOps vid behov.',
+            'q' => 'Vem arbetar på mitt projekt?',
+            'a' => 'Vi arbetar direkt med dig – ingen mellannivå, ingen telefonkedja. För större projekt samarbetar vi med ett nätverk av specialister inom design och DevOps vid behov.',
         ],
         [
             'q' => 'Hur ser supportprocessen ut efter lansering?',
-            'a' => 'Jag erbjuder support via e-post och telefon. Akuta buggar hanteras inom 24 timmar. För löpande support och vidareutveckling erbjuder jag månadsavtal med prioriterad tillgänglighet.',
+            'a' => 'Vi erbjuder support via e-post och telefon. Akuta buggar hanteras inom 24 timmar. För löpande support och vidareutveckling erbjuder vi månadsavtal med prioriterad tillgänglighet.',
         ],
         [
             'q' => 'Kan du ta över ett befintligt projekt?',
-            'a' => 'Ja, det händer ofta. Jag granskar koden, dokumenterar arkitekturen och ger en ärlig bedömning av nuläget och möjligheterna. Ibland räcker det med förbättringar, ibland rekommenderar jag en omskrivning – jag är transparent om vilket som ger bäst värde.',
+            'a' => 'Ja, det händer ofta. Vi granskar koden, dokumenterar arkitekturen och ger en ärlig bedömning av nuläget och möjligheterna. Ibland räcker det med förbättringar, ibland rekommenderar vi en omskrivning – vi är transparenta om vilket som ger bäst värde.',
         ],
     ],
 
     // Contact section
     'contact_label' => 'Kontakt',
     'contact_heading' => 'Redo att ta nästa steg?',
-    'contact_subheading' => 'Berätta om ditt projekt och dina utmaningar. Jag svarar inom 24 timmar och erbjuder ett kostnadsfritt första samtal.',
+    'contact_subheading' => 'Berätta om ditt projekt och dina utmaningar. Vi svarar inom 24 timmar och erbjuder ett kostnadsfritt första samtal.',
     'contact_email_label' => 'E-post',
     'contact_time_label' => 'Svarstid',
     'contact_time_value' => 'Inom 24 timmar på vardagar',
     'contact_status_label' => 'Status',
     'contact_status_value' => 'Tillgänglig för nya uppdrag',
     'contact_success_heading' => 'Tack för ditt meddelande!',
-    'contact_success_body' => 'Jag återkommer inom 24 timmar.',
+    'contact_success_body' => 'Vi återkommer inom 24 timmar.',
     'contact_field_name' => 'Namn',
     'contact_field_email' => 'E-post',
     'contact_field_company' => 'Företag',
@@ -260,7 +260,7 @@ return [
     'contact_privacy' => 'Dina uppgifter hanteras konfidentiellt och delas aldrig med tredje part.',
 
     // Footer
-    'footer_tagline' => 'Skräddarsydda webblösningar för växande företag. Jag hjälper dig gå från begränsande standardlösningar till system som passar din verksamhet.',
+    'footer_tagline' => 'Skräddarsydda webblösningar för växande företag. Vi hjälper dig gå från begränsande standardlösningar till system som passar din verksamhet.',
     'footer_available' => 'Tillgänglig för nya uppdrag',
     'footer_nav_label' => 'Sidor',
     'footer_contact_label' => 'Kontakt',

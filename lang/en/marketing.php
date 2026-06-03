@@ -4,7 +4,7 @@ return [
 
     // Layout / meta
     'title' => 'Henrik – Custom Web Solutions for Growing Businesses',
-    'description' => 'I help businesses move from limiting off-the-shelf solutions to custom web systems that save time, reduce administration and create room for growth.',
+    'description' => 'We help businesses move from limiting off-the-shelf solutions to custom web systems that save time, reduce administration and create room for growth.',
     'structured_data_name' => 'Henrik – Web Developer',
     'structured_data_desc' => 'Custom web solutions for growing businesses',
     'structured_data_service' => 'Web Development',
@@ -22,9 +22,9 @@ return [
     'hero_badge' => 'Available for new projects',
     'hero_headline_1' => 'Custom web solutions',
     'hero_headline_2' => 'that help your business grow',
-    'hero_subheadline' => 'I help growing businesses move from limiting off-the-shelf solutions to custom systems that save time, reduce administration and create room for growth.',
+    'hero_subheadline' => 'We help growing businesses move from limiting off-the-shelf solutions to custom systems that save time, reduce administration and create room for growth.',
     'hero_cta_primary' => 'Book a free call',
-    'hero_cta_secondary' => 'See how I work',
+    'hero_cta_secondary' => 'See how we work',
     'hero_trust_gdpr' => 'GDPR-aware development',
     'hero_trust_fast' => 'Fast delivery',
     'hero_trust_support' => 'Post-launch support',
@@ -35,7 +35,7 @@ return [
 
     // Pain points
     'pain_heading' => 'Does this sound familiar?',
-    'pain_subheading' => 'Most of my clients came to me with at least one of these problems.',
+    'pain_subheading' => 'Most of our clients come to us with at least one of these problems.',
     'pain_points' => [
         [
             'title' => 'Your website has outgrown WordPress',
@@ -59,8 +59,8 @@ return [
     'solution_label' => 'The Solution',
     'solution_heading' => 'There is a better way to work',
     'solution_subheading' => 'A custom solution that fits your business exactly – not the other way around.',
-    'solution_body' => 'Instead of adapting your business to a standard system, I build a solution that mirrors how you actually work. That means faster processes, fewer errors and a system that can grow at your pace.',
-    'solution_cta' => 'Talk to me about your project',
+    'solution_body' => 'Instead of adapting your business to a standard system, we build a solution that mirrors how you actually work. That means faster processes, fewer errors and a system that can grow at your pace.',
+    'solution_cta' => 'Talk to us about your project',
     'solution_benefits' => [
         'Built exactly for your needs, not a template',
         'Integrations with the systems you already use',
@@ -77,9 +77,9 @@ return [
 
     // Services
     'services_label' => 'Services',
-    'services_heading' => 'How can I help you?',
-    'services_subheading' => 'From simple websites to complex business systems – I build solutions that solve real problems.',
-    'services_cta' => 'Tell me about your project',
+    'services_heading' => 'How can we help you?',
+    'services_subheading' => 'From simple websites to complex business systems – we build solutions that solve real problems.',
+    'services_cta' => 'Tell us about your project',
     'services' => [
         ['title' => 'Business Websites',         'description' => 'Fast, secure and conversion-optimised sites built to generate leads and strengthen your brand.'],
         ['title' => 'Customer Portals',          'description' => 'Secure portals where your customers can log in, manage orders, download documents and communicate with you.'],
@@ -95,7 +95,7 @@ return [
     'security_label' => 'Security',
     'security_heading' => 'Security built in from the start',
     'security_subheading' => 'As business grows, security becomes a business issue, not just a technical one.',
-    'security_body' => 'A data breach costs more than money – it costs trust. I build systems where security is a cornerstone, not something bolted on afterwards.',
+    'security_body' => 'A data breach costs more than money – it costs trust. We build systems where security is a cornerstone, not something bolted on afterwards.',
     'security_callout' => '<strong class="font-semibold text-white">A typical WordPress site</strong> runs on average 20+ plugins, many of which are rarely updated. Each plugin is a potential entry point. A custom solution has no unnecessary parts.',
     'security_points' => [
         ['title' => 'Minimal attack surface',     'description' => 'No unnecessary plugins, no external dependencies. Every part of the system is controlled code that we know in detail.'],
@@ -114,25 +114,25 @@ return [
         [
             'number' => '01',
             'title' => 'Needs analysis',
-            'description' => 'We start with a free call where we go through your business, your goals and your current challenges. I ask the right questions to understand what actually needs to be solved – not just the symptoms.',
+            'description' => 'We start with a free call where we go through your business, your goals and your current challenges. We ask the right questions to understand what actually needs to be solved – not just the symptoms.',
             'deliverable' => 'Summary & proposal',
         ],
         [
             'number' => '02',
             'title' => 'Design & planning',
-            'description' => 'Based on the analysis I produce a technical plan, a sitemap and simple wireframes. We align and adjust before a single line of code is written. No surprises along the way.',
+            'description' => 'Based on the analysis we produce a technical plan, a sitemap and simple wireframes. We align and adjust before a single line of code is written. No surprises along the way.',
             'deliverable' => 'Technical spec & wireframes',
         ],
         [
             'number' => '03',
             'title' => 'Development',
-            'description' => 'I build in sprints with regular demos so you can follow along and give feedback continuously. The code is tested, documented and ready for production.',
+            'description' => 'We build in sprints with regular demos so you can follow along and give feedback continuously. The code is tested, documented and ready for production.',
             'deliverable' => 'Working application',
         ],
         [
             'number' => '04',
             'title' => 'Launch & support',
-            'description' => 'Deployment to your infrastructure, walkthrough and training on the system. I am available after launch for questions, bugs and further development.',
+            'description' => 'Deployment to your infrastructure, walkthrough and training on the system. We are available after launch for questions, bugs and further development.',
             'deliverable' => 'Production-ready solution',
         ],
     ],
@@ -168,7 +168,7 @@ return [
 
     // Case studies
     'cases_label' => 'Case studies',
-    'cases_heading' => 'Projects I am proud of',
+    'cases_heading' => 'Projects we are proud of',
     'cases_subheading' => 'Real problems, real solutions and measurable results.',
     'cases_anonymous' => 'Anonymised case',
     'cases' => [
@@ -195,53 +195,53 @@ return [
     // FAQ
     'faq_label' => 'FAQ',
     'faq_heading' => 'Common questions',
-    'faq_subheading' => 'Can\'t find the answer? Get in touch – I always respond.',
+    'faq_subheading' => 'Can\'t find the answer? Get in touch – we always respond.',
     'faq_items' => [
         [
             'q' => 'How long does it take to build a solution?',
-            'a' => 'It depends entirely on the complexity of the project. A simpler business website takes 2–4 weeks. A more complex system such as a customer portal or business system typically takes 6–16 weeks. I always provide a realistic time estimate after the needs analysis – no surprises.',
+            'a' => 'It depends entirely on the complexity of the project. A simpler business website takes 2–4 weeks. A more complex system such as a customer portal or business system typically takes 6–16 weeks. We always provide a realistic time estimate after the needs analysis – no surprises.',
         ],
         [
             'q' => 'What does it cost?',
-            'a' => 'Pricing varies based on the scope and complexity of the project. Simpler sites start around 30,000–50,000 SEK. More complex systems such as portals and business systems typically cost 80,000–250,000 SEK+. I work with fixed pricing based on a clear spec – no hidden overhead.',
+            'a' => 'Pricing varies based on the scope and complexity of the project. Simpler sites start around 30,000–50,000 SEK. More complex systems such as portals and business systems typically cost 80,000–250,000 SEK+. We work with fixed pricing based on a clear spec – no hidden overhead.',
         ],
         [
             'q' => 'What happens when the project is done?',
-            'a' => 'You get access to all source code, documentation and infrastructure. I offer support and maintenance agreements for ongoing updates, security patches and further development. You are never locked in – the code is yours.',
+            'a' => 'You get access to all source code, documentation and infrastructure. We offer support and maintenance agreements for ongoing updates, security patches and further development. You are never locked in – the code is yours.',
         ],
         [
             'q' => 'Can you integrate with systems we already use?',
-            'a' => 'Absolutely. I have built integrations with Fortnox, Visma, HubSpot, Stripe, Klarna, BankID, various CRM systems and e-commerce systems. If your system has an API, we can integrate with it.',
+            'a' => 'Absolutely. We have built integrations with Fortnox, Visma, HubSpot, Stripe, Klarna, BankID, various CRM systems and e-commerce systems. If your system has an API, we can integrate with it.',
         ],
         [
             'q' => 'Why not just use WordPress?',
             'a' => 'WordPress is excellent for simple sites and blogs. But for complex business systems, customer portals or applications with specific requirements it quickly becomes a constraint. Custom solutions are faster, more secure and can grow without technical compromises.',
         ],
         [
-            'q' => 'Do you work alone or with a team?',
-            'a' => 'I am a freelance developer who works directly with you – no middleman, no phone chains. For larger projects I collaborate with a network of specialists in design and DevOps when needed.',
+            'q' => 'Who will be working on my project?',
+            'a' => 'We work directly with you – no middlemen, no phone chains. For larger projects we collaborate with a network of specialists in design and DevOps when needed.',
         ],
         [
             'q' => 'What does the support process look like after launch?',
-            'a' => 'I offer support by email and phone. Critical bugs are handled within 24 hours. For ongoing support and further development I offer monthly retainers with priority availability.',
+            'a' => 'We offer support by email and phone. Critical bugs are handled within 24 hours. For ongoing support and further development we offer monthly retainers with priority availability.',
         ],
         [
             'q' => 'Can you take over an existing project?',
-            'a' => 'Yes, it happens often. I review the code, document the architecture and give an honest assessment of the current state and possibilities. Sometimes improvements are enough, sometimes I recommend a rewrite – I am transparent about which delivers the best value.',
+            'a' => 'Yes, it happens often. We review the code, document the architecture and give an honest assessment of the current state and possibilities. Sometimes improvements are enough, sometimes we recommend a rewrite – we are transparent about which delivers the best value.',
         ],
     ],
 
     // Contact section
     'contact_label' => 'Contact',
     'contact_heading' => 'Ready to take the next step?',
-    'contact_subheading' => 'Tell me about your project and your challenges. I respond within 24 hours and offer a free initial consultation.',
+    'contact_subheading' => 'Tell us about your project and your challenges. We respond within 24 hours and offer a free initial consultation.',
     'contact_email_label' => 'Email',
     'contact_time_label' => 'Response time',
     'contact_time_value' => 'Within 24 hours on business days',
     'contact_status_label' => 'Status',
     'contact_status_value' => 'Available for new projects',
     'contact_success_heading' => 'Thank you for your message!',
-    'contact_success_body' => 'I will get back to you within 24 hours.',
+    'contact_success_body' => 'We will get back to you within 24 hours.',
     'contact_field_name' => 'Name',
     'contact_field_email' => 'Email',
     'contact_field_company' => 'Company',
@@ -254,13 +254,13 @@ return [
     'contact_budget_50k_100k' => '50,000 – 100,000 SEK',
     'contact_budget_over_100k' => 'Over 100,000 SEK',
     'contact_budget_not_sure' => 'Not sure yet',
-    'contact_field_message' => 'Tell me about your project',
+    'contact_field_message' => 'Tell us about your project',
     'contact_message_placeholder' => 'Describe your current challenges and what you want to achieve...',
     'contact_submit' => 'Send message',
     'contact_privacy' => 'Your information is handled confidentially and never shared with third parties.',
 
     // Footer
-    'footer_tagline' => 'Custom web solutions for growing businesses. I help you move from limiting off-the-shelf solutions to systems that fit your business.',
+    'footer_tagline' => 'Custom web solutions for growing businesses. We help you move from limiting off-the-shelf solutions to systems that fit your business.',
     'footer_available' => 'Available for new projects',
     'footer_nav_label' => 'Pages',
     'footer_contact_label' => 'Contact',
