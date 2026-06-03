@@ -27,15 +27,11 @@ $rows = __('marketing.comparison_rows');
                 <div class="grid grid-cols-3 border-b border-zinc-800/50 px-6 py-4 last:border-0 hover:bg-zinc-900/30">
                     <div class="text-sm font-medium text-zinc-100">{{ $row['aspect'] }}</div>
                     <div class="flex items-start gap-2 text-sm text-zinc-100">
-                        <svg class="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
+                        <flux:icon.check class="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
                         {{ $row['custom'] }}
                     </div>
                     <div class="flex items-start gap-2 text-sm text-zinc-100">
-                        <svg class="mt-0.5 h-4 w-4 shrink-0 text-zinc-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                        </svg>
+                        <flux:icon.minus class="mt-0.5 h-4 w-4 shrink-0 text-zinc-200" />
                         {{ $row['wordpress'] }}
                     </div>
                 </div>

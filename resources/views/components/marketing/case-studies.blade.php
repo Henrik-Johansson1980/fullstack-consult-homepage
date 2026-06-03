@@ -26,9 +26,7 @@ $cases = __('marketing.cases');
                     <div class="mt-6 space-y-2">
                         @foreach($case['results'] as $result)
                             <div class="flex items-center gap-2 text-sm text-zinc-100">
-                                <svg class="h-3.5 w-3.5 shrink-0 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                                </svg>
+                                <flux:icon.check class="h-3.5 w-3.5 shrink-0 text-emerald-500" />
                                 {{ $result }}
                             </div>
                         @endforeach

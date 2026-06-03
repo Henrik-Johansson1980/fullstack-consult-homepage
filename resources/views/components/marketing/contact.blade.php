@@ -15,9 +15,7 @@
                 <div class="mt-10 space-y-4">
                     <div class="flex items-start gap-4 rounded-xl border border-zinc-800 bg-zinc-900/50 p-4">
                         <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900">
-                            <svg class="h-4 w-4 text-zinc-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
+                            <flux:icon.envelope class="h-4 w-4 text-zinc-200" />
                         </div>
                         <div>
                             <p class="text-xs font-medium text-zinc-100">{{ __('marketing.contact_email_label') }}</p>
@@ -27,9 +25,7 @@
 
                     <div class="flex items-start gap-4 rounded-xl border border-zinc-800 bg-zinc-900/50 p-4">
                         <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900">
-                            <svg class="h-4 w-4 text-zinc-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <flux:icon.clock class="h-4 w-4 text-zinc-200" />
                         </div>
                         <div>
                             <p class="text-xs font-medium text-zinc-100">{{ __('marketing.contact_time_label') }}</p>
@@ -53,9 +49,7 @@
             <div>
                 @if(session('contact_success'))
                     <div class="rounded-2xl border border-emerald-800 bg-emerald-950/50 p-8 text-center">
-                        <svg class="mx-auto mb-4 h-12 w-12 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <flux:icon.check-circle class="mx-auto mb-4 h-12 w-12 text-emerald-500" />
                         <h3 class="mb-2 text-lg font-semibold text-white">{{ __('marketing.contact_success_heading') }}</h3>
                         <p class="text-sm text-zinc-200">{{ __('marketing.contact_success_body') }}</p>
                     </div>
