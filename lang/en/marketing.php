@@ -14,7 +14,7 @@ return [
     'nav_process' => 'Process',
     'nav_about' => 'About',
     'nav_faq' => 'FAQ',
-    'nav_cta' => 'Book a call',
+    'nav_cta' => 'Contact us',
     'nav_open_menu' => 'Open menu',
     'lang_switch' => 'Svenska',
 
@@ -23,7 +23,7 @@ return [
     'hero_headline_1' => 'Custom web solutions',
     'hero_headline_2' => 'that help your business grow',
     'hero_subheadline' => 'We help growing businesses move from limiting off-the-shelf solutions to custom systems that save time, reduce administration and create room for growth.',
-    'hero_cta_primary' => 'Book a free call',
+    'hero_cta_primary' => 'Contact us',
     'hero_cta_secondary' => 'See how we work',
     'hero_trust_gdpr' => 'GDPR-aware development',
     'hero_trust_fast' => 'Fast delivery',

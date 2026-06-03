@@ -14,7 +14,7 @@ return [
     'nav_process' => 'Process',
     'nav_about' => 'Om oss',
     'nav_faq' => 'FAQ',
-    'nav_cta' => 'Boka samtal',
+    'nav_cta' => 'Kontakta oss',
     'nav_open_menu' => 'Öppna meny',
     'lang_switch' => 'English',
 
@@ -23,7 +23,7 @@ return [
     'hero_headline_1' => 'Skräddarsydda webblösningar',
     'hero_headline_2' => 'som hjälper ditt företag att växa',
     'hero_subheadline' => 'Vi hjälper växande företag att gå från begränsande standardlösningar till skräddarsydda system som sparar tid, minskar administration och skapar utrymme för tillväxt.',
-    'hero_cta_primary' => 'Boka ett kostnadsfritt samtal',
+    'hero_cta_primary' => 'Kontakta oss',
     'hero_cta_secondary' => 'Se hur vi arbetar',
     'hero_trust_gdpr' => 'GDPR-medveten utveckling',
     'hero_trust_fast' => 'Snabb leverans',
