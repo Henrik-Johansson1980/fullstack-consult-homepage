@@ -16,13 +16,13 @@ $steps = __('marketing.process_steps');
 
         <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             @foreach($steps as $step)
-                <div class="relative">
+                <div class="relative flex flex-col">
                     {{-- Connector line (not on last) --}}
                     @if(!$loop->last)
                         <div class="absolute left-8 top-8 hidden h-px w-[calc(100%+2rem)] bg-zinc-800 lg:block"></div>
                     @endif
 
-                    <div class="relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                    <div class="relative flex h-full flex-col rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
                         <div class="mb-4 text-2xl font-bold text-zinc-100">{{ $step['number'] }}</div>
                         <h3 class="mb-3 text-base font-semibold text-white">{{ $step['title'] }}</h3>
                         <p class="text-sm leading-relaxed text-zinc-200">{{ $step['description'] }}</p>
